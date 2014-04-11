@@ -1,0 +1,35 @@
+# All configs here came from all over the internet :)
+
+# General configs
+vbell off
+autodetach on
+startup_message off
+defscrollback 5000
+attrcolor b ".I"
+caption always '%{= k.}%{.b}[%{.g}%H%{.b}][%= %{.B}%?%-Lw%?%{.r}(%{+b .C}%n*%f %t%?(%u)%?%{-b .r})%{.B}%?%+Lw%?%?%= %{.b}][%{.y}%l%{.b}][%{.c}%m/%d %c%{.b}]%{= dd}'
+termcap xterm-color 'is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l'
+terminfo xterm-color 'is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l'
+defbce "on"
+
+# Terminal 256-color
+term screen-256color
+
+# Auto launch bash, irssi, cmus and mutt
+split
+screen -t bash bash
+split
+focus down
+screen -t irssi irssi
+split -v
+focus down
+screen -t cmus cmus
+focus down
+screen -t mutt mutt
+
+# Residual text fix
+altscreen on
+
+# Custom statusbar
+hardstatus off
+hardstatus alwayslastline
+hardstatus string "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %m/%d %C%a "
