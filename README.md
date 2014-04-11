@@ -5,7 +5,7 @@ Setup a solarized themed screen that creates 4 windows for; bash, irssi, cmus an
 Tested on Mavericks.
 
 ##Installation
-- Install cvs.
+- Install cvs
 
 ```bash
 brew install cvs
@@ -22,7 +22,7 @@ make
 sudo make install
 ```
 
-- Replace ~/.screenrc with the .screenrc here.
+- Replace ~/.screenrc with the .screenrc here
 
 
 
